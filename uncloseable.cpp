@@ -55,7 +55,7 @@ void Uncloseable::changeImage() {
 
 void Uncloseable::reOpen() {
     this->hide();
-    this->showMaximized();
+    this->showNormal();
 }
 
 void Uncloseable::closeEvent(QCloseEvent *event) {
