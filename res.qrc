@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/gifs">
+        <file>putin1.gif</file>
+        <file>putin2.gif</file>
+        <file>putin3.jpeg</file>
+        <file>putin4.gif</file>
+        <file>putin5.gif</file>
+        <file>putin6.gif</file>
+        <file>putin7.gif</file>
+        <file>putin8.jpeg</file>
+        <file>putin9.jpg</file>
+        <file>putin10.jpg</file>
+        <file>putin11.jpeg</file>
+        <file>lioshik.jpg</file>
+    </qresource>
+</RCC>
