@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
     QVBoxLayout *gridLayout = new QVBoxLayout(gridWidget);
     QLabel *lblVzlom = new QLabel();
     lblVzlom->setText("Взлом госучереждений США");
-    QFont f( "Arial", 14, QFont::Bold);
+    QFont f( "Arial", 12, QFont::Bold);
     lblVzlom->setFont(f);
     BarChanger *vzlomBar = new BarChanger();
 
@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
     gridLayout->addWidget(vzlomBar, Qt::AlignmentFlag::AlignHCenter);
     windowVzlom.setCentralWidget(gridWidget);
 
-    windowVzlom.setFixedSize(screenW / 4, screenH / 6);
+    windowVzlom.setFixedSize(screenW / 4 * 1.25, screenH / 6);
     windowVzlom.move(windowVzlom.width() * 0.5, screenH - windowVzlom.height() * 1.8);
     windowVzlom.show();
     vzlomBar->setMaximum(100);

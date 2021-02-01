@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <string>
 #include <vector>
+#include <QMovie>
 
 class Uncloseable : public QMainWindow
 {
@@ -18,6 +19,22 @@ public slots:
 
 private:
     void closeEvent(QCloseEvent *);
+    QMovie *movie = nullptr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            ;
 
 signals:
 

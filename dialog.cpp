@@ -45,6 +45,5 @@ std::vector<std::string> Dialog::texts = {
 
 void Dialog::openNew() {
     message->setText(texts[rand() % texts.size()].c_str());
-    close();
     showNormal();
 }

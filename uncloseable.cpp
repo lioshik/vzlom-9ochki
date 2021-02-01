@@ -42,19 +42,14 @@ void Uncloseable::changeImage() {
     QLabel *lbl = new QLabel();
     auto newPath = QString(":/gifs/");
     newPath.append(images1[i].c_str());
-    QMovie* movie = new QMovie(newPath);
+    movie = new QMovie(newPath);
     lbl->setMovie(movie);
     lbl->setScaledContents(true);
     setCentralWidget(lbl);
     movie->start();
-
-    QTimer *timer = new QTimer(this);
-    connect(timer, SIGNAL(timeout()), this, SLOT(changeImage()));
-    if (again) timer->start(2000);
 }
 
 void Uncloseable::reOpen() {
-    this->hide();
     this->showNormal();
 }
 
