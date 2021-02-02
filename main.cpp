@@ -40,6 +40,7 @@ int main(int argc, char *argv[])
     windowPutin.setWindowTitle("кибератака на США");
     windowPutin.show();
     windowPutin.changeImage();
+    windowPutin.startChanging();
 
     // Vzlom
     Uncloseable windowVzlom;

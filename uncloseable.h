@@ -12,6 +12,7 @@ class Uncloseable : public QMainWindow
 public:
     static std::vector<std::string> images1;
     explicit Uncloseable(QWidget *parent = nullptr);
+    void startChanging();
 
 public slots:
     void changeImage();
@@ -19,23 +20,7 @@ public slots:
 
 private:
     void closeEvent(QCloseEvent *);
-    QMovie *movie = nullptr
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            ;
-
+    QMovie *movie = nullptr;
 signals:
 
 };

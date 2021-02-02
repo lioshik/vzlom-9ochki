@@ -33,11 +33,8 @@ std::vector<std::string> Uncloseable::images1 = {
     };
 
 void Uncloseable::changeImage() {
-    bool again = true;
-    if (this->centralWidget()) {
-        delete (this->centralWidget());
-        again = false;
-    }
+    delete (this->centralWidget());
+    delete movie;
     int i = rand() % images1.size();
     QLabel *lbl = new QLabel();
     auto newPath = QString(":/gifs/");
@@ -47,6 +44,12 @@ void Uncloseable::changeImage() {
     lbl->setScaledContents(true);
     setCentralWidget(lbl);
     movie->start();
+}
+
+void Uncloseable::startChanging() {
+    QTimer *timer = new QTimer(this);
+    connect(timer, SIGNAL(timeout()), this, SLOT(changeImage()));
+    timer->start(2500);
 }
 
 void Uncloseable::reOpen() {
